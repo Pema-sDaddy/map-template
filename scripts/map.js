@@ -5,7 +5,7 @@ L.mapbox.accessToken =
 	'pk.eyJ1IjoidGZodWdoZXMiLCJhIjoiY2l0YW4yY3p1MDJpMjJubzYwaWIwbzVlOSJ9.1JIlibamCPwC32L28V42NA';
 
 // ACTION ITEM: Insert the Mapbox key for your landing page map, refer blank for information on locating the map key. Also change the set view for your region of the world
-var map = L.mapbox.map('map', "tfhughes.1ef1lgf2").setView([47.534462, 34.424692],
+var map = L.mapbox.map('map', "tfhughes.1ef1lgf2").setView([47.202272, 34.452109],
 	7);
 var layer = L.mapbox.featureLayer().addTo(map)
 
