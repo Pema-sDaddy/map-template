@@ -90,7 +90,7 @@ $(function() {
 
 	// list views from Cloudant that we want to offer as layers
 	var cloudantViews = [];
-	$.getJSON('https://vulibrarygis.cloudant.com/mapping-berlin/_design/tour/',
+	$.getJSON('https://garuda3060.cloudant.com/scythians/_all_docs',
 		function(result) {
 			var viewsList = result.views;
 			for (var v in viewsList) {
@@ -117,7 +117,7 @@ $(function() {
 
 function getLayer(callback, cloudantView) {
 	var cloudantURLbase =
-		"https://vulibrarygis.cloudant.com/mapping-berlin/_design/tour/_view/";
+		"https://garuda3060.cloudant.com/scythians/_all_docs";
 	var cloudantURLcallback = "?callback=?";
 	var thisCloudantURL = cloudantURLbase + cloudantView + cloudantURLcallback;
 	$.getJSON(thisCloudantURL, function(result) {
