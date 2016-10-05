@@ -215,7 +215,7 @@ function processLayer(result) {
 	// } 
 // ACTION ITEM: Replace this mapbox id with the mapbox id for your landing page map.	
 	else {
-		new_id = 'vulibrarygis.of23e6p0'
+		new_id = 'tfhughes.1ef1lgf2'
 	};
 	var new_layer = L.mapbox.tileLayer(new_id);
 	new_layer.addTo(map);
