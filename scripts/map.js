@@ -90,7 +90,7 @@ $(function() {
 	// list views from Cloudant that we want to offer as layers
 	var cloudantViews = [];
 // ACTION ITEM: Replace cloudant database URL with URL for your database 
-	$.getJSON('https://vulibrarygis.cloudant.com/map-berlin/_design/tour/',
+	$.getJSON('https://garuda3060.cloudant.com/scythians/_all_docs',
 		function(result) {
 			var viewsList = result.views;
 			for (var v in viewsList) {
@@ -126,7 +126,7 @@ $("#search").submit(function(event) {
 function getLayer(callback, cloudantView) {
 // ACTION ITEM: Replace cloudant database URL with URL for your database 	
 	var cloudantURLbase =
-		"https://vulibrarygis.cloudant.com/map-berlin/_design/tour/_view/";
+		"https://garuda3060.cloudant.com/scythians/_all_docs";
 	var cloudantURLcallback = "?callback=?";
 	var thisCloudantURL = cloudantURLbase + cloudantView + cloudantURLcallback;
 	$.getJSON(thisCloudantURL, function(result) {
@@ -143,7 +143,7 @@ function getLayer(callback, cloudantView) {
 function searchPoints(callback, cloudantSearch) {
 // ACTION ITEM: Replace cloudant database URL with URL for your database 	
 	var cloudantURLbase =
-		"https://vulibrarygis.cloudant.com/map-berlin/_design/tour/_search/ids?q=";
+		"https://garuda3060.cloudant.com/scythians/_all_docs";
 	var cloudantURLcallback = "&callback=?";
 	var thisCloudantURL = cloudantURLbase + cloudantSearch + cloudantURLcallback;
 	$.getJSON(thisCloudantURL, function(result) {
@@ -167,7 +167,7 @@ function getPoints(cloudantIDs) {
 
 	function getPoint(id) {
 // ACTION ITEM: Replace cloudant database URL with URL for your database 		
-		var cloudantURLbase = "https://vulibrarygis.cloudant.com/map-berlin/";
+		var cloudantURLbase = "https://garuda3060.cloudant.com/scythians/_all_docs";
 		var url = cloudantURLbase + id;
 		return $.getJSON(url); // this returns a "promise"
 	}
