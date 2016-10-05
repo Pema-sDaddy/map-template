@@ -196,7 +196,7 @@ function processLayer(result) {
 // ACTION ITEM: The selection label must match your view in Cloudant	
 	if (selection_label == "Ukraine") {
 // ACTION ITEM: Replace mapbox id below with the mapbox id that corresponds to your georeferenced map for the view above			
-		new_id = 'vulibrarygis.l74iic1a'
+		new_id = 'tfhughes.1ef1lgf2'
 	} 
 // ACTION ITEM: If you would like to incorporate multiple views into your mapping application, remove the double slashes in front of each trio of lines beginning with else if and ending with the end curly brace.	
 // ACTION ITEM: Each trio of lines from else if to the end curly brace is equivalent to one Cloudant view and map.
